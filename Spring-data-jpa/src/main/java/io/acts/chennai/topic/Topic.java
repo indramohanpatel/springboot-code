@@ -1,10 +1,9 @@
 package io.acts.chennai.topic;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "table")
+//@Table(name = "table")
 public class Topic {
 	@Id
 	String id;
@@ -12,11 +11,11 @@ public class Topic {
 	String description;
 	
 	public Topic() {
-//		super();
+		super();
 	}
 	
 	public Topic(String id, String name, String description) {
-//		super();
+		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
